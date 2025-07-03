@@ -12,13 +12,13 @@ const Hero = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Spherical Logo */}
+        {/* Brand Logo */}
         <div className="mb-8 flex justify-center">
-          <div className="w-32 h-32 bg-gradient-to-br from-blue-500 via-blue-600 to-green-500 rounded-full flex items-center justify-center shadow-2xl animate-pulse">
-            <div className="w-24 h-24 bg-gradient-to-br from-blue-400 to-green-400 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-4xl">L</span>
-            </div>
-          </div>
+          <img 
+            src="/lovable-uploads/f3d34e3e-aa01-46aa-b0ef-b2246c6f47ba.png" 
+            alt="LeamzyGrowthTech Logo" 
+            className="w-32 h-32 object-contain animate-pulse"
+          />
         </div>
 
         {/* Headline */}
