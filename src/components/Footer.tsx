@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -10,7 +9,11 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-green-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">L</span>
+                <img 
+                  src="/lovable-uploads/726e1298-a329-4c2e-adf4-20e7374b86d0.png" 
+                  alt="LeamzyGrowthTech Logo" 
+                  className="w-8 h-8 object-contain"
+                />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
                 LeamzyGrowthTech
