@@ -25,7 +25,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/f3d34e3e-aa01-46aa-b0ef-b2246c6f47ba.png" 
+              src="/lovable-uploads/7e112198-8e11-4340-9127-984544cfec6a.png" 
               alt="LeamzyGrowthTech Logo" 
               className="w-10 h-10 object-contain"
             />
