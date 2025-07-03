@@ -1,10 +1,7 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-green-50 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-green-50 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
@@ -14,11 +11,7 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Brand Logo */}
         <div className="mb-8 flex justify-center">
-          <img 
-            src="/lovable-uploads/f3d34e3e-aa01-46aa-b0ef-b2246c6f47ba.png" 
-            alt="LeamzyGrowthTech Logo" 
-            className="w-32 h-32 object-contain animate-pulse"
-          />
+          <img alt="LeamzyGrowthTech Logo" className="w-32 h-32 object-contain animate-pulse" src="/lovable-uploads/31e33ba2-b6f6-4124-b459-24bbedf502a3.png" />
         </div>
 
         {/* Headline */}
@@ -44,18 +37,11 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-lg px-8 py-3 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-          >
+          <Button size="lg" className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-lg px-8 py-3 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
             Get Started Today
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300"
-          >
+          <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300">
             View Our Work
           </Button>
         </div>
@@ -76,8 +62,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
