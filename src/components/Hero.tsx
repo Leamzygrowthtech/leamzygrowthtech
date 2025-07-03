@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Brand Logo */}
         <div className="mb-8 flex justify-center">
-          <img alt="LeamzyGrowthTech Logo" className="w-32 h-32 object-contain animate-pulse" src="/lovable-uploads/31e33ba2-b6f6-4124-b459-24bbedf502a3.png" />
+          <img alt="LeamzyGrowthTech Logo" className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 object-contain animate-pulse" src="/lovable-uploads/31e33ba2-b6f6-4124-b459-24bbedf502a3.png" />
         </div>
 
         {/* Headline */}
