@@ -29,21 +29,21 @@ const About = () => {
 
   const team = [
     {
-      name: 'Alex Thompson',
+      name: 'Alani Temitope',
       role: 'Founder & CEO',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face',
+      image: '/lovable-uploads/26da59c3-4ccb-4ce9-83dd-9532951cd412.png',
       bio: '10+ years in digital marketing with expertise in scaling businesses from startup to enterprise level.'
     },
     {
-      name: 'Maria Garcia',
+      name: 'Ismail Abdulmajeed',
       role: 'Head of Strategy',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face',
+      image: '/lovable-uploads/ac7ff789-fad3-41e5-b6c6-ceacd25eeb83.png',
       bio: 'Former Google marketing manager with deep expertise in data-driven growth strategies.'
     },
     {
-      name: 'David Kim',
+      name: 'Wasiu Toheeb',
       role: 'Technical Director',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face',
+      image: '/lovable-uploads/70cbb82a-1f2d-4bb3-9a3e-d4eb22a8c48e.png',
       bio: 'Full-stack developer and SEO expert specializing in technical optimization and web performance.'
     }
   ];
@@ -60,8 +60,9 @@ const About = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We're a team of digital marketing experts, strategists, and technologists passionate about 
-              helping businesses thrive in the digital landscape.
+              Welcome to our digital marketing portfolio! We are passionate marketing professionals dedicated to 
+              helping businesses thrive online. With a proven track record in SEO, social media marketing, paid advertising, 
+              and Website Design, we specialize in creating customized campaigns that deliver measurable results.
             </p>
           </div>
         </div>
@@ -78,8 +79,9 @@ const About = () => {
                   <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
                 </div>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  To empower businesses with innovative digital marketing solutions that drive sustainable growth, 
-                  increase brand visibility, and create meaningful connections with their target audience.
+                  Our mission is to turn your goals into reality by increasing your online visibility, 
+                  driving targeted traffic, and boosting conversions. Whether you're a startup looking to build your brand 
+                  or an established business seeking to scale, we bring creative ideas and data-driven strategies to every project.
                 </p>
               </div>
 
