@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Eye, Heart, Users, Award, Lightbulb } from 'lucide-react';
@@ -31,19 +30,19 @@ const About = () => {
     {
       name: 'Alani Temitope',
       role: 'Founder & CEO',
-      image: '/lovable-uploads/26da59c3-4ccb-4ce9-83dd-9532951cd412.png',
+      image: '/lovable-uploads/95ea0d25-e5c2-43fa-896c-34e9eed4cb5b.png',
       bio: '10+ years in digital marketing with expertise in scaling businesses from startup to enterprise level.'
     },
     {
       name: 'Ismail Abdulmajeed',
       role: 'Head of Strategy',
-      image: '/lovable-uploads/ac7ff789-fad3-41e5-b6c6-ceacd25eeb83.png',
+      image: '/lovable-uploads/b3714a6a-c071-4e4e-8832-aa84e56862ea.png',
       bio: 'Former Google marketing manager with deep expertise in data-driven growth strategies.'
     },
     {
       name: 'Wasiu Toheeb',
       role: 'Technical Director',
-      image: '/lovable-uploads/70cbb82a-1f2d-4bb3-9a3e-d4eb22a8c48e.png',
+      image: '/lovable-uploads/0183b5d0-244b-4f9b-8794-5f9aae30b3cf.png',
       bio: 'Full-stack developer and SEO expert specializing in technical optimization and web performance.'
     }
   ];
