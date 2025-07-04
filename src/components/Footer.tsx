@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -23,16 +24,16 @@ const Footer = () => {
               Driving growth through innovative digital solutions. We help businesses thrive in the digital landscape with cutting-edge marketing strategies.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://web.facebook.com/profile.php?id=61578217070850" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 Facebook
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://x.com/leamzygrowth" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 Twitter
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 LinkedIn
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/leamzygrowthtech/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 Instagram
               </a>
             </div>

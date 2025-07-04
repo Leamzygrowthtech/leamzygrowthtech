@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -7,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { toast } from '@/hooks/use-toast';
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
+import { Mail, Phone, Clock, Send } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,10 +25,27 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`New Contact Form Submission from ${formData.name}`);
+    const body = encodeURIComponent(`
+Name: ${formData.name}
+Email: ${formData.email}
+Company: ${formData.company}
+Phone: ${formData.phone}
+Service: ${formData.service}
+Budget: ${formData.budget}
+Message: ${formData.message}
+    `);
+    
+    const mailtoLink = `mailto:leamzygrowthtech@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+    
     toast({
-      title: "Message Sent!",
-      description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
+      title: "Email Client Opened!",
+      description: "Your default email client should open with the message pre-filled.",
     });
+    
     setFormData({
       name: '',
       email: '',
@@ -45,20 +61,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: 'hello@leamzygrowthtech.com',
+      details: 'leamzygrowthtech@gmail.com',
       description: 'Send us an email anytime'
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: '+1 (555) 123-4567',
+      details: '+1 (724) 601-5302',
       description: 'Mon-Fri from 8am to 5pm'
-    },
-    {
-      icon: MapPin,
-      title: 'Office',
-      details: '123 Digital Avenue, Tech City, TC 12345',
-      description: 'Come say hello at our office'
     },
     {
       icon: Clock,
@@ -107,7 +117,7 @@ const Contact = () => {
       {/* Contact Info */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {contactInfo.map((info, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 border-0 shadow-md">
                 <CardContent className="p-6">

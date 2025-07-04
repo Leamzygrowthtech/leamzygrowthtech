@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -10,7 +9,7 @@ const Services = () => {
       icon: Search,
       title: 'SEO Optimization',
       description: 'Dominate search results and drive organic traffic with our comprehensive SEO strategies.',
-      price: 'Starting at $1,500/month',
+      price: 'Starting at $500/month',
       features: [
         'Comprehensive SEO Audit',
         'Keyword Research & Strategy',
@@ -25,7 +24,7 @@ const Services = () => {
       icon: Users,
       title: 'Social Media Marketing',
       description: 'Build brand awareness and engage your audience across all major social platforms.',
-      price: 'Starting at $1,200/month',
+      price: 'Starting at $300/month',
       features: [
         'Social Media Strategy',
         'Content Creation & Curation',
@@ -40,7 +39,7 @@ const Services = () => {
       icon: Target,
       title: 'PPC Advertising',
       description: 'Drive targeted traffic and maximize ROI with data-driven pay-per-click campaigns.',
-      price: 'Starting at $2,000/month',
+      price: 'Starting at $700/month',
       features: [
         'Google Ads Management',
         'Facebook & Instagram Ads',
@@ -55,7 +54,7 @@ const Services = () => {
       icon: Globe,
       title: 'Website Development',
       description: 'Create stunning, high-converting websites that drive business growth.',
-      price: 'Starting at $3,500',
+      price: 'Starting at $800',
       features: [
         'Custom Website Design',
         'Responsive Development',
@@ -85,7 +84,7 @@ const Services = () => {
       icon: Zap,
       title: 'Digital Strategy Consulting',
       description: 'Develop comprehensive digital strategies aligned with your business goals.',
-      price: 'Starting at $2,500/month',
+      price: 'Starting at $1,500/month',
       features: [
         'Digital Marketing Audit',
         'Competitive Analysis',
