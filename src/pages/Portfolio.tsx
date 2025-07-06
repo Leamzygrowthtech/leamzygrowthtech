@@ -86,10 +86,10 @@ const Portfolio = () => {
   ];
 
   const stats = [
-    { value: '500+', label: 'Projects Completed' },
+    { value: '200+', label: 'Projects Completed' },
     { value: '250%', label: 'Average Growth Rate' },
-    { value: '95%', label: 'Client Satisfaction' },
-    { value: '$50M+', label: 'Revenue Generated' }
+    { value: '98%', label: 'Client Satisfaction' },
+    { value: '$10M+', label: 'Revenue Generated' }
   ];
 
   return (
