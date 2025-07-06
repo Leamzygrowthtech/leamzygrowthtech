@@ -8,7 +8,7 @@ const Portfolio = () => {
     {
       title: 'TechStart Inc. - SaaS Growth',
       category: 'SEO & Content Marketing',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+      image: '/lovable-uploads/31cab08a-4c3f-40e8-a311-b7cc6f9a94d6.png',
       results: [
         { metric: 'Organic Traffic', value: '+300%', icon: TrendingUp },
         { metric: 'Lead Generation', value: '+250%', icon: Users },
@@ -21,7 +21,7 @@ const Portfolio = () => {
     {
       title: 'E-Commerce Plus - PPC Domination',
       category: 'PPC & Social Media',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
+      image: '/lovable-uploads/16cb8b36-80c7-42ef-9bf0-e2f980f88caa.png',
       results: [
         { metric: 'ROAS', value: '4.5x', icon: TrendingUp },
         { metric: 'Conversion Rate', value: '+220%', icon: Users },
@@ -60,7 +60,7 @@ const Portfolio = () => {
     {
       title: 'Manufacturing Co. - Digital Transformation',
       category: 'Full Digital Strategy',
-      image: 'https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?w=600&h=400&fit=crop',
+      image: '/lovable-uploads/e1afbc25-e964-4f1a-be66-264dbbcb3a93.png',
       results: [
         { metric: 'Online Revenue', value: '+450%', icon: TrendingUp },
         { metric: 'Market Share', value: '+120%', icon: Eye },
@@ -73,7 +73,7 @@ const Portfolio = () => {
     {
       title: 'Fashion Retailer - Omnichannel Success',
       category: 'E-commerce & Social',
-      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop',
+      image: '/lovable-uploads/23371416-5bf7-4c85-9c3a-a0b78a7ae36f.png',
       results: [
         { metric: 'Online Sales', value: '+380%', icon: TrendingUp },
         { metric: 'Social Engagement', value: '+250%', icon: Users },
