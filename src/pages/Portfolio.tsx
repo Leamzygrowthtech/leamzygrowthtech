@@ -47,7 +47,7 @@ const Portfolio = () => {
     {
       title: 'HealthTech Solutions - Website Design',
       category: 'Web Development & UX',
-      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop',
+      image: '/lovable-uploads/b32ee0cd-7210-4039-a8cd-f111f2b28075.png',
       results: [
         { metric: 'Conversion Rate', value: '+340%', icon: TrendingUp },
         { metric: 'Page Load Speed', value: '+90%', icon: Eye },
