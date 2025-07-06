@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -46,9 +45,9 @@ const Portfolio = () => {
       timeline: '12 months'
     },
     {
-      title: 'HealthTech Solutions - Website Redesign',
+      title: 'HealthTech Solutions - Website Design',
       category: 'Web Development & UX',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop',
+      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop',
       results: [
         { metric: 'Conversion Rate', value: '+340%', icon: TrendingUp },
         { metric: 'Page Load Speed', value: '+90%', icon: Eye },
