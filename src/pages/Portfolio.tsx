@@ -34,7 +34,7 @@ const Portfolio = () => {
     {
       title: 'Local Bistro Chain - Social Success',
       category: 'Social Media Marketing',
-      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop',
+      image: '/lovable-uploads/c8e578cd-eb1a-4d4c-8d05-fdf125a275a3.png',
       results: [
         { metric: 'Followers Growth', value: '+500%', icon: Users },
         { metric: 'Engagement Rate', value: '+280%', icon: TrendingUp },
