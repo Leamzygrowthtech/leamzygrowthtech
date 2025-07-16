@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -101,5 +102,34 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animations and mobile optimizations */
+@layer utilities {
+  .wave {
+    animation: wave 2s ease-in-out infinite;
+  }
+  
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    75% { transform: rotate(-10deg); }
+  }
+  
+  /* Ensure buttons are touch-friendly on mobile */
+  .btn-touch {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better text contrast for mobile */
+  @media (max-width: 640px) {
+    .text-gradient {
+      background: linear-gradient(135deg, #2563eb, #16a34a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
   }
 }
