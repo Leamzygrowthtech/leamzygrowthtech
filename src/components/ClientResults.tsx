@@ -15,6 +15,13 @@ const ClientResults = () => {
       icon: Star
     },
     {
+      name: 'Dr. Adebayo',
+      business: 'WellnessCare Clinic',
+      quote: 'Since working with Leamzy, our clinic\'s Google visibility skyrocketed. We started getting new patients every week who found us online. The reviews added credibility, and now we rank top 3 for our area. Highly recommend!',
+      result: 'Top 3 Google Ranking',
+      icon: TrendingUp
+    },
+    {
       name: 'Uche',
       business: 'Laundry Business',
       quote: 'Leamzy turned my dead GMB into a customer magnet. From 0 visibility to top 3 in searches!',
@@ -22,11 +29,25 @@ const ClientResults = () => {
       icon: TrendingUp
     },
     {
+      name: 'Emeka',
+      business: 'LagosRide Rentals',
+      quote: 'I never knew how much Google reviews mattered until Leamzy stepped in. Within a few days, my car rental service started showing up more. I got calls from people who said they found me directly on Google. Real results!',
+      result: 'Direct Google Leads',
+      icon: Star
+    },
+    {
       name: 'Chidi',
       business: 'Logistics Business',
       quote: 'I ran ads with Leamzy and saw real results—calls, chats, bookings. 100% worth it!',
       result: '+200% Lead Generation',
       icon: Star
+    },
+    {
+      name: 'Mr. Tolu',
+      business: 'Tolu Homes & Rentals',
+      quote: 'Before Leamzy, my listings were invisible. After optimizing my Google page and adding solid reviews, I started getting inquiries daily. People trust me more now just because of how my brand looks online!',
+      result: 'Daily Inquiries',
+      icon: TrendingUp
     },
     {
       name: 'Ada',
