@@ -3,6 +3,8 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const AboutMe = () => {
+  const whatsappLink = "https://wa.me/2348024073215?text=Hi%20Leamzy,%20I%20want%20to%20grow%20my%20business";
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -24,16 +26,22 @@ const AboutMe = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-lg px-8 py-3"
+            asChild
           >
-            Chat With Me on WhatsApp
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              Chat With Me on WhatsApp
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
           </Button>
           <Button 
             variant="outline" 
             size="lg" 
             className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+            asChild
           >
-            Book a Free Growth Call
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              Book a Free Growth Call
+            </a>
           </Button>
         </div>
       </div>

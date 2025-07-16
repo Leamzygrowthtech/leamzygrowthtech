@@ -4,46 +4,53 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 const MyServices = () => {
+  const whatsappLink = "https://wa.me/2348024073215?text=Hi%20Leamzy,%20I%20want%20to%20grow%20my%20business";
+
   const services = [
     {
       title: 'Google My Business Optimization',
       features: [
         'Complete GMB profile setup and optimization',
-        'Local SEO strategies to improve visibility'
+        'Local SEO strategies to improve visibility',
+        'Enhanced local search rankings'
       ]
     },
     {
       title: 'Online Review Generation',
       features: [
         'Authentic review acquisition strategies',
-        'Result-based review campaigns that convert'
+        'Result-based review campaigns that convert',
+        'Review management and response optimization'
       ]
     },
     {
       title: 'Reputation Management',
       features: [
         'Monitor and respond to customer feedback',
-        'Crisis management and brand protection'
+        'Crisis management and brand protection',
+        'Online reputation enhancement strategies'
       ]
     },
     {
       title: 'Business Branding & Strategy',
       features: [
         'Brand identity development and positioning',
-        'Strategic planning for sustainable growth'
+        'Strategic planning for sustainable growth',
+        'Market positioning and competitive analysis'
       ]
     },
     {
-      title: 'Website or Portfolio Setup Guidance',
+      title: 'Website Development',
       features: [
         'Professional website development consultation',
-        'Portfolio optimization for maximum impact'
+        'Responsive and conversion-optimized designs',
+        'SEO-friendly website architecture'
       ]
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
+    <section id="services" className="py-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -81,9 +88,12 @@ const MyServices = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-lg px-8 py-3"
+            asChild
           >
-            Let's Work – Chat on WhatsApp
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              Let's Work – Chat on WhatsApp
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
           </Button>
         </div>
       </div>

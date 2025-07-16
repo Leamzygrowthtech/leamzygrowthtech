@@ -1,97 +1,85 @@
+
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Search, Users, Target, Globe, BarChart, Zap, CheckCircle, ArrowRight } from 'lucide-react';
+import { Search, Star, Shield, Target, Globe, CheckCircle, ArrowRight } from 'lucide-react';
 
 const Services = () => {
+  const whatsappLink = "https://wa.me/2348024073215?text=Hi%20Leamzy,%20I%20want%20to%20grow%20my%20business";
+
   const services = [
     {
       icon: Search,
-      title: 'SEO Optimization',
-      description: 'Dominate search results and drive organic traffic with our comprehensive SEO strategies.',
-      price: 'Starting at $500/month',
-      features: [
-        'Comprehensive SEO Audit',
-        'Keyword Research & Strategy',
-        'On-Page & Technical SEO',
-        'Content Optimization',
-        'Link Building Campaigns',
-        'Monthly Performance Reports'
-      ],
-      popular: false
-    },
-    {
-      icon: Users,
-      title: 'Social Media Marketing',
-      description: 'Build brand awareness and engage your audience across all major social platforms.',
+      title: 'Google My Business Optimization',
+      description: 'Maximize your local visibility and attract more customers through optimized GMB profiles.',
       price: 'Starting at $300/month',
       features: [
-        'Social Media Strategy',
-        'Content Creation & Curation',
-        'Community Management',
-        'Paid Social Advertising',
-        'Influencer Partnerships',
-        'Analytics & Reporting'
+        'Complete GMB profile setup and optimization',
+        'Local SEO strategies implementation',
+        'Enhanced local search rankings',
+        'Photo and post optimization',
+        'Regular profile monitoring',
+        'Monthly performance reports'
       ],
       popular: true
     },
     {
-      icon: Target,
-      title: 'PPC Advertising',
-      description: 'Drive targeted traffic and maximize ROI with data-driven pay-per-click campaigns.',
-      price: 'Starting at $700/month',
+      icon: Star,
+      title: 'Online Review Generation',
+      description: 'Build trust and credibility with authentic customer reviews that drive conversions.',
+      price: 'Starting at $250/month',
       features: [
-        'Google Ads Management',
-        'Facebook & Instagram Ads',
-        'Campaign Setup & Optimization',
-        'A/B Testing & Analytics',
-        'Conversion Tracking',
-        'Monthly ROI Reports'
+        'Authentic review acquisition strategies',
+        'Result-based review campaigns',
+        'Review response management',
+        'Review platform optimization',
+        'Customer feedback systems',
+        'Reputation tracking'
+      ],
+      popular: false
+    },
+    {
+      icon: Shield,
+      title: 'Reputation Management',
+      description: 'Monitor, protect, and enhance your online reputation across all digital platforms.',
+      price: 'Starting at $400/month',
+      features: [
+        'Real-time reputation monitoring',
+        'Crisis management strategies',
+        'Brand protection protocols',
+        'Negative review mitigation',
+        'Online mention tracking',
+        'Reputation recovery campaigns'
+      ],
+      popular: false
+    },
+    {
+      icon: Target,
+      title: 'Business Branding & Strategy',
+      description: 'Develop a compelling brand identity and strategic positioning for sustainable growth.',
+      price: 'Starting at $800/month',
+      features: [
+        'Brand identity development',
+        'Strategic market positioning',
+        'Competitive analysis',
+        'Growth planning strategies',
+        'Brand messaging optimization',
+        'Strategic consulting sessions'
       ],
       popular: false
     },
     {
       icon: Globe,
       title: 'Website Development',
-      description: 'Create stunning, high-converting websites that drive business growth.',
-      price: 'Starting at $800',
+      description: 'Create professional, conversion-optimized websites that drive business growth.',
+      price: 'Starting at $1,200',
       features: [
-        'Custom Website Design',
-        'Responsive Development',
-        'E-commerce Integration',
-        'CMS Setup & Training',
-        'SEO-Optimized Structure',
-        'Ongoing Maintenance'
-      ],
-      popular: false
-    },
-    {
-      icon: BarChart,
-      title: 'Analytics & Reporting',
-      description: 'Make data-driven decisions with comprehensive analytics and performance tracking.',
-      price: 'Starting at $800/month',
-      features: [
-        'Google Analytics Setup',
-        'Custom Dashboard Creation',
-        'Performance Tracking',
-        'Conversion Analysis',
-        'Monthly Reports',
-        'Strategic Recommendations'
-      ],
-      popular: false
-    },
-    {
-      icon: Zap,
-      title: 'Digital Strategy Consulting',
-      description: 'Develop comprehensive digital strategies aligned with your business goals.',
-      price: 'Starting at $1,500/month',
-      features: [
-        'Digital Marketing Audit',
-        'Competitive Analysis',
-        'Growth Strategy Development',
-        'Channel Optimization',
-        'Performance Monitoring',
-        'Quarterly Strategy Reviews'
+        'Custom website design',
+        'Responsive development',
+        'SEO-friendly architecture',
+        'Conversion optimization',
+        'Performance optimization',
+        'Ongoing maintenance support'
       ],
       popular: false
     }
@@ -170,9 +158,14 @@ const Services = () => {
                     ))}
                   </ul>
                   
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
-                    Get Started
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                  <Button 
+                    className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
+                    asChild
+                  >
+                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                      Get Started
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -220,11 +213,25 @@ const Services = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-              Schedule Free Consultation
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="bg-white text-blue-600 hover:bg-gray-100"
+              asChild
+            >
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                Schedule Free Consultation
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-              View Our Portfolio
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:text-blue-600"
+              asChild
+            >
+              <a href="/#services">
+                View Our Portfolio
+              </a>
             </Button>
           </div>
         </div>

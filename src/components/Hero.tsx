@@ -3,6 +3,8 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
+  const whatsappLink = "https://wa.me/2348024073215?text=Hi%20Leamzy,%20I%20want%20to%20grow%20my%20business";
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-green-50 overflow-hidden">
       {/* Background Elements */}
@@ -59,16 +61,22 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-lg px-8 py-3 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+            asChild
           >
-            Chat With Me on WhatsApp
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              Chat With Me on WhatsApp
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
           </Button>
           <Button 
             variant="outline" 
             size="lg" 
             className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300"
+            asChild
           >
-            View Our Work
+            <a href="#services">
+              View Our Work
+            </a>
           </Button>
         </div>
 

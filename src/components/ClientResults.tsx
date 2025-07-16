@@ -4,6 +4,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
 const ClientResults = () => {
+  const whatsappLink = "https://wa.me/2348024073215?text=Hi%20Leamzy,%20I%20want%20to%20grow%20my%20business";
+
   const testimonials = [
     {
       name: 'Mrs. Ada',
@@ -80,15 +82,21 @@ const ClientResults = () => {
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
+              asChild
             >
-              See My Client Results
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                See My Client Results
+              </a>
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
               className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+              asChild
             >
-              Start Branding Today
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                Start Branding Today
+              </a>
             </Button>
           </div>
         </div>
