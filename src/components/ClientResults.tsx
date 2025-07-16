@@ -8,24 +8,38 @@ const ClientResults = () => {
 
   const testimonials = [
     {
-      name: 'Mrs. Ada',
-      business: 'Salon Owner',
-      quote: 'Leamzy helped me get 20 new reviews in one week. My GMB traffic increased and I started getting real customers!',
-      result: '+20 Reviews in 1 Week',
+      name: 'Sandra',
+      business: 'Spa Owner',
+      quote: 'In just 1 week, my business got 15 new reviews and customers started calling nonstop. Leamzy is the truth!',
+      result: '+15 Reviews in 1 Week',
       icon: Star
     },
     {
-      name: 'Kingsley',
-      business: 'Logistics Business',
-      quote: 'I never knew reviews could help this much. My visibility improved in just days!',
-      result: '+150% Visibility Boost',
+      name: 'Uche',
+      business: 'Laundry Business',
+      quote: 'Leamzy turned my dead GMB into a customer magnet. From 0 visibility to top 3 in searches!',
+      result: 'Top 3 Local Ranking',
       icon: TrendingUp
     },
     {
-      name: 'Sarah Johnson',
-      business: 'Restaurant Owner',
-      quote: 'The GMB optimization was a game changer. We went from 5 to 50+ reviews and our phone keeps ringing!',
-      result: '+300% Local Traffic',
+      name: 'Chidi',
+      business: 'Logistics Business',
+      quote: 'I ran ads with Leamzy and saw real results—calls, chats, bookings. 100% worth it!',
+      result: '+200% Lead Generation',
+      icon: Star
+    },
+    {
+      name: 'Ada',
+      business: 'Hair Stylist',
+      quote: 'Professional. Fast. Real value. My salon got booked out just from GMB and review work.',
+      result: 'Fully Booked Schedule',
+      icon: TrendingUp
+    },
+    {
+      name: 'Tunde',
+      business: 'Barbershop Owner',
+      quote: 'If you\'re trying to grow online, this is who you should work with!',
+      result: '+150% Customer Growth',
       icon: Star
     }
   ];
@@ -36,7 +50,7 @@ const ClientResults = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-              What Clients Say
+              What Our Clients Say
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -44,7 +58,7 @@ const ClientResults = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-green-600"></div>
@@ -76,7 +90,7 @@ const ClientResults = () => {
 
         <div className="text-center space-y-4">
           <p className="text-lg text-gray-600 mb-6">
-            Ready to see similar results for your business?
+            Want to see real case studies?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -85,7 +99,7 @@ const ClientResults = () => {
               asChild
             >
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                See My Client Results
+                Chat Me on WhatsApp
               </a>
             </Button>
             <Button 

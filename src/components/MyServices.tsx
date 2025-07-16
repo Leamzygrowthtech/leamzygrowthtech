@@ -9,43 +9,27 @@ const MyServices = () => {
   const services = [
     {
       title: 'Google My Business Optimization',
-      features: [
-        'Complete GMB profile setup and optimization',
-        'Local SEO strategies to improve visibility',
-        'Enhanced local search rankings'
-      ]
+      description: 'Boost your visibility on Google Search & Maps. I help you appear where your customers are searching.'
     },
     {
-      title: 'Online Review Generation',
-      features: [
-        'Authentic review acquisition strategies',
-        'Result-based review campaigns that convert',
-        'Review management and response optimization'
-      ]
+      title: 'Authentic Review Generation',
+      description: 'Get real customer reviews that build trust and increase local ranking.'
     },
     {
       title: 'Reputation Management',
-      features: [
-        'Monitor and respond to customer feedback',
-        'Crisis management and brand protection',
-        'Online reputation enhancement strategies'
-      ]
+      description: 'Fix your online presence. I help you control how your brand looks online—good reviews, clean image.'
     },
     {
-      title: 'Business Branding & Strategy',
-      features: [
-        'Brand identity development and positioning',
-        'Strategic planning for sustainable growth',
-        'Market positioning and competitive analysis'
-      ]
+      title: 'Paid Ads Campaigns (Google & Social)',
+      description: 'Reach thousands fast with targeted ad campaigns that convert viewers to paying customers.'
     },
     {
-      title: 'Website Development',
-      features: [
-        'Professional website development consultation',
-        'Responsive and conversion-optimized designs',
-        'SEO-friendly website architecture'
-      ]
+      title: 'Brand Strategy & Setup',
+      description: 'I guide you in building a strong brand identity—logo, tone, target audience, digital setup.'
+    },
+    {
+      title: 'Website / Portfolio Creation Guidance',
+      description: 'Need a site like this? I\'ll help you build one that\'s fast, mobile-friendly, and client-ready.'
     }
   ];
 
@@ -55,7 +39,7 @@ const MyServices = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-              My Services
+              FULL MARKETING
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -71,14 +55,9 @@ const MyServices = () => {
                   <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <h3 className="text-lg font-bold text-gray-900">{service.title}</h3>
                 </div>
-                <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="text-gray-600 text-sm flex items-start">
-                      <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-green-500 rounded-full mr-2 mt-2 flex-shrink-0"></span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {service.description}
+                </p>
               </CardContent>
             </Card>
           ))}
@@ -91,7 +70,7 @@ const MyServices = () => {
             asChild
           >
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              Let's Work – Chat on WhatsApp
+              Let's Work – Chat Me on WhatsApp
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </Button>

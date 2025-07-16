@@ -1,7 +1,12 @@
+
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-green-50 overflow-hidden">
+  const whatsappLink = "https://wa.me/2348024073215?text=Hi%20Leamzy,%20I%20want%20to%20grow%20my%20business";
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-green-50 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
@@ -47,12 +52,25 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-          <Button size="lg" className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-lg px-8 py-3 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-            Chat With Me on WhatsApp
-            <ArrowRight className="ml-2 h-5 w-5" />
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-lg px-8 py-3 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+            asChild
+          >
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              Chat With Me on WhatsApp
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
           </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300">
-            View Our Work
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300"
+            asChild
+          >
+            <a href="#services">
+              View Our Work
+            </a>
           </Button>
         </div>
 
@@ -72,6 +90,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
