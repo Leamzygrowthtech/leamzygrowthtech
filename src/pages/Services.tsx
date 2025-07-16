@@ -2,16 +2,15 @@
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Search, Star, Shield, Target, Globe, CheckCircle, ArrowRight } from 'lucide-react';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 
 const Services = () => {
   const whatsappLink = "https://wa.me/2348024073215?text=Hi%20Leamzy,%20I%20want%20to%20grow%20my%20business";
 
   const services = [
     {
-      icon: Search,
       title: 'Google My Business Optimization',
-      description: 'Maximize your local visibility and attract more customers through optimized GMB profiles.',
+      description: 'Boost your visibility on Google Search & Maps. I help you appear where your customers are searching.',
       price: 'Starting at $300/month',
       features: [
         'Complete GMB profile setup and optimization',
@@ -24,9 +23,8 @@ const Services = () => {
       popular: true
     },
     {
-      icon: Star,
-      title: 'Online Review Generation',
-      description: 'Build trust and credibility with authentic customer reviews that drive conversions.',
+      title: 'Authentic Review Generation',
+      description: 'Get real customer reviews that build trust and increase local ranking.',
       price: 'Starting at $250/month',
       features: [
         'Authentic review acquisition strategies',
@@ -39,9 +37,8 @@ const Services = () => {
       popular: false
     },
     {
-      icon: Shield,
       title: 'Reputation Management',
-      description: 'Monitor, protect, and enhance your online reputation across all digital platforms.',
+      description: 'Fix your online presence. I help you control how your brand looks online—good reviews, clean image.',
       price: 'Starting at $400/month',
       features: [
         'Real-time reputation monitoring',
@@ -54,24 +51,36 @@ const Services = () => {
       popular: false
     },
     {
-      icon: Target,
-      title: 'Business Branding & Strategy',
-      description: 'Develop a compelling brand identity and strategic positioning for sustainable growth.',
+      title: 'Paid Ads Campaigns (Google & Social)',
+      description: 'Reach thousands fast with targeted ad campaigns that convert viewers to paying customers.',
+      price: 'Starting at $500/month',
+      features: [
+        'Google Ads campaign setup',
+        'Facebook & Instagram advertising',
+        'Targeted audience research',
+        'Ad copy and creative development',
+        'Campaign optimization',
+        'ROI tracking and reporting'
+      ],
+      popular: false
+    },
+    {
+      title: 'Brand Strategy & Setup',
+      description: 'I guide you in building a strong brand identity—logo, tone, target audience, digital setup.',
       price: 'Starting at $800/month',
       features: [
         'Brand identity development',
         'Strategic market positioning',
-        'Competitive analysis',
-        'Growth planning strategies',
+        'Logo and visual identity',
         'Brand messaging optimization',
+        'Target audience research',
         'Strategic consulting sessions'
       ],
       popular: false
     },
     {
-      icon: Globe,
-      title: 'Website Development',
-      description: 'Create professional, conversion-optimized websites that drive business growth.',
+      title: 'Website / Portfolio Creation Guidance',
+      description: 'Need a site like this? I\'ll help you build one that\'s fast, mobile-friendly, and client-ready.',
       price: 'Starting at $1,200',
       features: [
         'Custom website design',
@@ -115,12 +124,12 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-              Our Services
+              FULL MARKETING
             </span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Comprehensive digital marketing solutions designed to accelerate your business growth 
-            and maximize your online presence.
+            Comprehensive digital growth solutions to boost your online presence
+            and maximize your business potential.
           </p>
         </div>
       </section>
@@ -140,11 +149,11 @@ const Services = () => {
                 )}
                 
                 <CardHeader className="text-center pb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <service.icon className="w-8 h-8 text-white" />
+                  <div className="flex items-start mb-4">
+                    <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                    <CardTitle className="text-lg font-bold text-gray-900 text-left">{service.title}</CardTitle>
                   </div>
-                  <CardTitle className="text-xl font-bold text-gray-900">{service.title}</CardTitle>
-                  <CardDescription className="text-gray-600 mt-2">{service.description}</CardDescription>
+                  <CardDescription className="text-gray-600 mt-2 text-left text-sm leading-relaxed">{service.description}</CardDescription>
                   <div className="text-2xl font-bold text-blue-600 mt-4">{service.price}</div>
                 </CardHeader>
                 
