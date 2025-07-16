@@ -1,12 +1,7 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Hero = () => {
-  const whatsappLink = "https://wa.me/2348024073215?text=Hi%20Leamzy,%20I%20want%20to%20grow%20my%20business";
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-green-50 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-green-50 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
@@ -16,19 +11,13 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Brand Logo */}
         <div className="mb-8 flex justify-center">
-          <img 
-            alt="LeamzyGrowthTech Logo" 
-            className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 object-contain animate-pulse" 
-            src="/lovable-uploads/31e33ba2-b6f6-4124-b459-24bbedf502a3.png" 
-          />
+          <img alt="LeamzyGrowthTech Logo" className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 object-contain animate-pulse" src="/lovable-uploads/31e33ba2-b6f6-4124-b459-24bbedf502a3.png" />
         </div>
 
         {/* Brand Name & Slogan */}
         <div className="mb-8">
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-green-600 bg-clip-text text-transparent">
-              Leamzy Growth Nexus
-            </span>
+            <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-green-600 bg-clip-text text-transparent">Leamzy Growth Tech</span>
           </h1>
           <p className="text-2xl sm:text-3xl font-semibold text-gray-700 mb-6">
             Your Online Visibility Plug 🔌
@@ -58,25 +47,12 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-lg px-8 py-3 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-            asChild
-          >
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              Chat With Me on WhatsApp
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+          <Button size="lg" className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-lg px-8 py-3 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            Chat With Me on WhatsApp
+            <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300"
-            asChild
-          >
-            <a href="#services">
-              View Our Work
-            </a>
+          <Button variant="outline" size="lg" className="text-lg px-8 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300">
+            View Our Work
           </Button>
         </div>
 
@@ -96,8 +72,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
