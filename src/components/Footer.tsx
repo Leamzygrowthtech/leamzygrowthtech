@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
+            <Link to="/" className="flex items-center space-x-3 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-green-500 rounded-full flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/726e1298-a329-4c2e-adf4-20e7374b86d0.png" 
@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
                 LeamzyGrowthTech
               </span>
-            </div>
+            </Link>
             <p className="text-gray-400 mb-6 max-w-md">
               Driving growth through innovative digital solutions. We help businesses thrive in the digital landscape with cutting-edge marketing strategies.
             </p>
