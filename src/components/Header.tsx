@@ -47,8 +47,8 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
-              Get Started
+            <Button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700" asChild>
+              <Link to="/contact">Get Started</Link>
             </Button>
           </nav>
 
@@ -79,8 +79,8 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-4 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
-                Get Started
+              <Button className="w-full mt-4 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700" asChild>
+                <Link to="/contact">Get Started</Link>
               </Button>
             </nav>
           </div>
