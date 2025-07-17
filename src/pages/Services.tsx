@@ -7,13 +7,13 @@ const Services = () => {
   const services = [{
     title: 'Google My Business Optimization',
     description: 'Boost your visibility on Google Search & Maps. I help you appear where your customers are searching.',
-    price: 'Starting at $300/month',
+    price: 'Starting at $100/month',
     features: ['Complete GMB profile setup and optimization', 'Local SEO strategies implementation', 'Enhanced local search rankings', 'Photo and post optimization', 'Regular profile monitoring', 'Monthly performance reports'],
     popular: true
   }, {
     title: 'Authentic Review Generation',
     description: 'Get real customer reviews that build trust and increase local ranking.',
-    price: 'Starting at $250/month',
+    price: 'Starting at $150/month',
     features: ['Authentic review acquisition strategies', 'Result-based review campaigns', 'Review response management', 'Review platform optimization', 'Customer feedback systems', 'Reputation tracking'],
     popular: false
   }, {
@@ -37,7 +37,7 @@ const Services = () => {
   }, {
     title: 'Website / Portfolio Creation Guidance',
     description: 'Need a site like this? I\'ll help you build one that\'s fast, mobile-friendly, and client-ready.',
-    price: 'Starting at $1,200',
+    price: 'Starting at $400',
     features: ['Custom website design', 'Responsive development', 'SEO-friendly architecture', 'Conversion optimization', 'Performance optimization', 'Ongoing maintenance support'],
     popular: false
   }];
