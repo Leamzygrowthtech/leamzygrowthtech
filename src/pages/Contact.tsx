@@ -54,7 +54,7 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-blue-600 mr-4" />
                   <div>
                     <p className="font-semibold">Location</p>
-                    <p className="text-gray-600">Nigeria</p>
+                    <p className="text-gray-600">Global</p>
                   </div>
                 </div>
               </div>
